@@ -1,20 +1,18 @@
 (function(){
     'use strict';
 
-    angular.module('angular-soap')
-        .controller('angularSoapCtrl', angularSoapCtrl);
+    angular.module('soapangularApp')
+        .controller('soapangularCtrl', soapangularCtrl);
 
-    angular.$inject = ['$scope', 'soap'];
+    angular.$inject = ['$scope', 'soapangular'];
 
-    function angularSoapCtrl($scope, soap){
+    function soapangularCtrl($scope, soapangular){
 
         var vm = this;
 
-        vm.soap = soap;
-        vm.url = 'https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb6.asmx';
+        vm.soap = soapangular;
 
-
-        soap.post()
+        vm.soap.post()
             .then(successHandler)
             .catch(errorHandler);
 

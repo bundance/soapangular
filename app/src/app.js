@@ -2,6 +2,6 @@
     'use strict';
 
     angular
-        .module('angular-soap', ['angularSoap']);
+        .module('soapangularApp', ['untangled.soapangular']);
 })();
 

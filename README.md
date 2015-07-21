@@ -8,7 +8,7 @@ Before using the factory, you must import the two scripts and its module:
 
 ``` html
 <script src="soapclient.js"></script>
-<script src="angular.soap.js"></script>
+<script src="soapangular.js"></script>
 ```
 
 ``` javascript
